@@ -30,36 +30,37 @@
 
     <section id="menu">
       <h2>Vår meny</h2>
-      <div class="menylista">
+      <div class="menu-list">
         <article>
           <h3>Kardemummabulle</h3>
           <p>Bakad på färsk kardemumma och pärlsocker.</p>
           <p>35 kr</p>
-          <img src="images/bulle.svg" alt="Nybakad kardemummabulle">
+          <img src="images/bulle.svg" alt="Nybakad kardemummabulle" width="400" height="auto">
         </article>
         <article>
           <h3>Bryggkaffe</h3>
           <p>Lokalrostat, med fri påtår.</p>
           <p>32 kr</p>
-          <img src="images/kaffe.svg" alt="En kopp bryggkaffe">
+          <img src="images/kaffe.svg" alt="En kopp bryggkaffe" width="400" height="auto">
         </article>
         <article>
           <h3>Ostmacka</h3>
           <p>Surdegsbröd, lagrad ost och krispig sallad.</p>
           <p>59 kr</p>
-          <img src="images/smorgas.svg" alt="Ostmacka på surdegsbröd">
+          <img src="images/smorgas.svg" alt="Ostmacka på surdegsbröd" width="400" height="auto">
         </article>
         <article>
           <h3>Kaffe Sao Paulo V60</h3>
           <p>Brasilianskt färskrostat kaffe av äkta arabicabönor, bryggt med V60 dripper.</p>
           <p>39 kr</p>
-          <img src="images/kaffe.svg" alt="En kopp brasilianskt kaffe">
+          <img src="images/kaffe.svg" alt="En kopp brasilianskt kaffe" width="400" height="auto">
         </article>
       </div>
     </section>
 
     <section id="about">
       <h2>Om oss</h2>
+      <img src="images/kafe-rubiacea.svg" alt="Kafé Rubiáceas lokal i Stockholm" width="600" height="auto">
       <p>Kafé Rubiácea öppnade 2019 och drivs av två vänner
         som ville ha ett ställe där man vågar sitta kvar.
         Vi handlar lokalt och bakar varje dag.
@@ -67,21 +68,24 @@
         Välkommen in!
       </p>
       <p>Öppet vardagar 07-18 och helger 09-16.</p>
-      <img src="images/kafe-rubiacea.svg" alt="Kafé Rubiáceas lokal i Stockholm">
 
-      <button type="button" alt="Öppna på karta i Google Maps"
-        onclick="window.open('https://maps.app.goo.gl/s6EpZg2KsWgxqwR49', '_blank')" class="google-btn">
-        Hitta hit
+      <button type="button" onclick="window.open('https://maps.app.goo.gl/s6EpZg2KsWgxqwR49', '_blank')">
+        Hitta hit - öppna i Google Maps
       </button>
-      <!-- aaaa -->
-
+      <!-- Funkar nog bäst med <a href> tag här, 
+        men testar använda knapp, båda bättre än <div> 
+        då det är semantiskt korrekt och talar om 
+        funktionen för skärmläsare 
+      -->
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Kafé Rubiácea</p>
-    <p>Fiktivgatan 1, 111 11 Stockholm</p>
-    <p>hej&commat;rubiacea.example</p>
+    <address>
+      Fiktivgatan 1, 111 11 Stockholm<br>
+      <a href="mailto:hej@rubiacea.example">hej@rubiacea.example</a>
+    </address>
   </footer>
 
 </body>
