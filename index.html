@@ -10,11 +10,11 @@
 <body>
   <header>
     <h1>Kafé Rubiácea - fika i hjärtat av Stockholm</h1>
-    <nav>
+    <nav aria-label="Huvudmeny">
       <ul>
-        <li><a href="#meny">Meny</a></li>
-        <li><a href="#om-oss">Om oss</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#menu">Meny</a></li>
+        <li><a href="#about">Om oss</a></li>
+        <li><a href="kontakt.html">Boka bord</a></li>
       </ul>
     </nav>
   </header>
@@ -25,52 +25,56 @@
       <p>Hos oss bakas allt från grunden. Kom in för en bulle,
         en kopp kaffe och en stund för dig själv.
       </p>
-      <a href="#meny">Se menyn</a>
+      <a href="#menu">Se menyn</a>
     </section>
 
-    <section id="meny">
+    <section id="menu">
       <h2>Vår meny</h2>
-      <ul>
-        <li>
-          <article>
-            <h3>Kardemummabulle</h3>
-            <p>Bakad på färsk kardemumma och pärlsocker.</p>
-            <p>35 kr</p>
-            <img src="images/bulle.svg" alt="Nybakad kardemummabulle">
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Bryggkaffe</h3>
-            <p>Lokalrostat, med fri påtår.</p>
-            <p>32 kr</p>
-            <img src="images/kaffe.svg" alt="En kopp bryggkaffe">
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Ostmacka</h3>
-            <p>Surdegsbröd, lagrad ost och krispig sallad.</p>
-            <p>59 kr</p>
-            <img src="images/smorgas.svg" alt="Ostmacka på surdegsbröd">
-          </article>
-        </li>
-      </ul>
+      <div class="menylista">
+        <article>
+          <h3>Kardemummabulle</h3>
+          <p>Bakad på färsk kardemumma och pärlsocker.</p>
+          <p>35 kr</p>
+          <img src="images/bulle.svg" alt="Nybakad kardemummabulle">
+        </article>
+        <article>
+          <h3>Bryggkaffe</h3>
+          <p>Lokalrostat, med fri påtår.</p>
+          <p>32 kr</p>
+          <img src="images/kaffe.svg" alt="En kopp bryggkaffe">
+        </article>
+        <article>
+          <h3>Ostmacka</h3>
+          <p>Surdegsbröd, lagrad ost och krispig sallad.</p>
+          <p>59 kr</p>
+          <img src="images/smorgas.svg" alt="Ostmacka på surdegsbröd">
+        </article>
+        <article>
+          <h3>Kaffe Sao Paulo V60</h3>
+          <p>Brasilianskt färskrostat kaffe av äkta arabicabönor, bryggt med V60 dripper.</p>
+          <p>39 kr</p>
+          <img src="images/kaffe.svg" alt="En kopp brasilianskt kaffe">
+        </article>
+      </div>
     </section>
 
-    <section id="om-oss">
+    <section id="about">
       <h2>Om oss</h2>
-      <p>Kafé Kardemumma öppnade 2019 och drivs av två vänner
+      <p>Kafé Rubiácea öppnade 2019 och drivs av två vänner
         som ville ha ett ställe där man vågar sitta kvar.
         Vi handlar lokalt och bakar varje dag.
+        Skön Brasiliansk stämning med musik, kaffe och fika.
+        Välkommen in!
       </p>
       <p>Öppet vardagar 07-18 och helger 09-16.</p>
       <img src="images/kafe-rubiacea.svg" alt="Kafé Rubiáceas lokal i Stockholm">
-    </section>
 
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p>Vi hör av oss så snart som möjligt.</p>
+      <button type="button" alt="Öppna på karta i Google Maps"
+        onclick="window.open('https://maps.app.goo.gl/s6EpZg2KsWgxqwR49', '_blank')" class="google-btn">
+        Hitta hit
+      </button>
+      <!-- aaaa -->
+
     </section>
   </main>
 
@@ -81,4 +85,5 @@
   </footer>
 
 </body>
+
 </html>
